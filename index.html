@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Jey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <span class="corner tl"></span><span class="corner tr"></span>
+    <span class="corner bl"></span><span class="corner br"></span> 
+
+<button class="profile-btn" id="profileBtn" aria-label="Play video">
+  <img class="profile-img" src="https://files.catbox.moe/1o96cf.jpg" alt="Jey" />
+  <video class="profile-video" id="profileVideo" src="https://files.catbox.moe/wm413i.mov" muted loop playsinline preload="metadata"></video>
+</button>
+
+    <p class="eyebrow">Happy Birthday</p>
+    <h1 id="name">Jey</h1>
+
+    <div class="divider"><span></span><i>+</i><span></span></div>
+
+    <p class="eyebrow small" id="turns">She turns</p>
+    <div class="age" id="age">0</div>
+    <p class="tagline" id="tagline">A day as timeless as her</p>
+
+    <section class="player">
+      <div class="track">
+        <div class="cover"><img src="https://files.catbox.moe/35ik80.jpg" alt="cover" /> </div>
+        <div>
+          <div class="song-title" id="songTitle">Song title</div>
+          <div class="song-artist" id="songArtist">Artist</div>
+ </div>
+      </div>
+      <button class="play" id="playBtn" aria-label="Play">
+        <svg id="iconPlay" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        <svg id="iconPause" viewBox="0 0 24 24" hidden><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+      </button>
+      <div class="bar" id="bar"><div class="fill" id="fill"></div></div>
+      <div class="times"><span id="cur">0:00</span><span id="dur">0:00</span></div>
+      <p class="notice" id="notice" hidden>Song coming soon</p>
+      <audio id="audio" preload="auto"></audio>
+    </section>
+
+    <hr />
+
+    <p class="eyebrow small">Synced Lyrics</p>
+    <div class="lyrics"><p id="lyric">♪ …</p></div>
+
+    <div class="eq" id="eq">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <section class="wish">
+      <p class="eyebrow small" id="wishHint">Tap the heart</p>
+      <button class="heart" id="heart" aria-label="Open your birthday wish" aria-expanded="false">
+        <svg viewBox="0 0 100 90" aria-hidden="true"><path d="M50 88C20 66 0 48 0 26 0 11 11 0 26 0c11 0 19 6 24 15C55 6 63 0 74 0c15 0 26 11 26 26 0 22-20 40-50 62z"/></svg>
+        <span class="heart-msg" id="wishMsg"></span>
+      </button>
+    </section>
+  </main>
+
+  <footer><span id="signature">Yours in the eternal shadows</span> · <span id="from"></span></footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
